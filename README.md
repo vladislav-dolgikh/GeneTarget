@@ -16,7 +16,7 @@ The command `python3 gene_target.py -h` return:
 
   usage: gene_target.py [-h] chip_seq_peaks rnaseq_table motif_recognition file_output file_PWM threshold chip_seq_fasta 
   
-  positional arguments:
+####  positional arguments:
   
   `chip_seq_peaks` BED file contains ChIP-seq peaks
   
@@ -26,7 +26,7 @@ The command `python3 gene_target.py -h` return:
   
   `file_output` Name of output file
   
-  optional arguments:
+####  optional arguments:
   
   `file_PWM` File contains position weight matrix
   
@@ -38,8 +38,11 @@ The command `python3 gene_target.py -h` return:
    
 The program can work in two modes: with and without motive recognition. If the motif recognition function is active, then the user must provide the positional weight matrix, threshold value, and ChIP-seq peak sequences in FASTA format.
  
- Example run without motif recognition: `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 0 target_genes.txt`
- Example run with motif recognition: `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 1 target_genes.txt pwm_1.txt 0.91 ein3_chipseq_4h.fasta`
+#### Example run without motif recognition: 
+ `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 0 target_genes.txt`
+ 
+#### Example run with motif recognition: 
+ `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 1 target_genes.txt pwm_1.txt 0.91 ein3_chipseq_4h.fasta`
  
  File formats
 --------

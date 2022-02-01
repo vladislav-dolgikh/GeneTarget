@@ -18,9 +18,9 @@ The command `python3 gene_target.py -h` returns:
   
 ####  positional arguments:
   
-  `chip_seq_peaks` BED file contains ChIP-seq peaks
+  `chip_seq_peaks` BED file containing ChIP-seq peaks
   
-  `rnaseq_table` Table contains log2FC and p-adj values from RNA-seq processing experiment
+  `rnaseq_table` Table containing log2FC and p-adj values from RNA-seq processing experiment
   
   `motif_recognition` A boolean function determines whether the motif will be recognized (0 - if not, 1 - if yes)
   
@@ -28,15 +28,15 @@ The command `python3 gene_target.py -h` returns:
   
 ####  optional arguments:
   
-  `file_PWM` File contains position weight matrix
+  `file_PWM` File containing position weight matrix
   
   `threshold` Threshold value for position weight matrix
 
-  `chip_seq_fasta` FASTA file contains sequences of ChIP-seq peaks  
+  `chip_seq_fasta` FASTA file containing sequences of ChIP-seq peaks  
  
    `-h, --help` show this help message and exit  
    
-The program can work in two modes: with and without motive recognition. If the motif recognition function is active, then the user must provide the positional weight matrix, threshold value, and ChIP-seq peak sequences in FASTA format.
+The program can work in two modes: with and without motif recognition. If the motif recognition function is active, then the user must provide the positional weight matrix, threshold value, and ChIP-seq peak sequences in FASTA format.
  
 #### Example run without motif recognition: 
  `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 0 target_genes.txt`
@@ -111,17 +111,3 @@ A simple file in FASTA format. The header should have the following format: `chr
 >1-237697-237961
 AAAAAGATTAGAGAGGAAAGATGGAGAAAAAATGGAGGAAGGTA...
  ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

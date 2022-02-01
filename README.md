@@ -15,7 +15,7 @@ Usage
 --------
 The command `python3 gene_target.py -h` returns:
 
-  usage: gene_target.py [-h] chip_seq_peaks rnaseq_table motif_recognition file_output file_PWM threshold chip_seq_fasta 
+  `usage: gene_target.py [-h] chip_seq_peaks rnaseq_table motif_recognition file_output file_PWM threshold chip_seq_fasta`
   
 ####  positional arguments:
   

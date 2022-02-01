@@ -64,7 +64,7 @@ A simple BED3 file contains columns with chromosome number, coordinates of start
 1	27000	28500
  ```
 
-### Table of RNA-seq output (rnaseq_table argument)
+### 2. Table of RNA-seq output (rnaseq_table argument)
 
 Table contains gene ID's and log2FC and p-adj values for each RNA-seq experiment. The number of experiments can be any.
 
@@ -84,7 +84,7 @@ AT1G01225	-0.398548781	0.999963365	0.080885801	0.980423396
 AT1G01230	0.094237385	0.999963365	-0.401992625	0.372281038
  ```
 
-### Positional weight matrix (file_pwm argument)
+### 3. Positional weight matrix (file_pwm argument)
 
 A simple position weight matrix, where columns correspond to letters of genetic alphabet (A, C, G, T), and rows - to match weight in positions.
 
@@ -98,7 +98,7 @@ A simple position weight matrix, where columns correspond to letters of genetic 
 |-7.96|-7.96|1.78|-0.88|
 |-1.57|-1.68|1.74|-7.96|
 
-### Sequences of ChIP-seq (chip_seq_fasta argument)
+### 4. Sequences of ChIP-seq (chip_seq_fasta argument)
 
 A simple file in FASTA format. The header should have the following format: `chromosome_number-start-end`
 

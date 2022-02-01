@@ -37,7 +37,7 @@ The command `python3 gene_target.py -h` returns:
  
    `-h, --help` show this help message and exit  
    
-The program can work in two modes: with and without motif recognition. If the motif recognition function is active, then the user must provide the positional weight matrix, threshold value, and ChIP-seq peak sequences in FASTA format.
+The program can work in two modes: with and without motif recognition. If the motif recognition function is active, user must provide the positional weight matrix, threshold value, and ChIP-seq peak sequences in FASTA format.
  
 #### Example run without motif recognition: 
  `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 0 target_genes.txt`

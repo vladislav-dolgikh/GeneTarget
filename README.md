@@ -11,6 +11,8 @@ pandas: `pip3 install pandas`
 
 Biopython: `pip3 install bio`
 
+File with promoter coordinates: `promoters.txt`
+
 Usage
 --------
 The command `python3 gene_target.py -h` returns:

@@ -108,7 +108,7 @@ def peak_in_promoters(chipseq_peaks):
         chipseq_chromosome = line1[0]
         if len(line1) == 4:
             site = str(line1[3])
-        promoters_coordinates = open("volleydoll_promoters_tair10.txt", "r")  # BED file with promoters coordinates
+        promoters_coordinates = open("promoters.txt", "r")  # BED file with promoters coordinates
         for line2 in promoters_coordinates:
             line2 = line2.strip('\n')
             line2 = line2.split('\t')

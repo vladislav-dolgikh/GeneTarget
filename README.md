@@ -19,31 +19,31 @@ The command `python3 gene_target.py -h` returns:
   
 ####  positional arguments:
   
-  `chip_seq_peaks` BED file containing ChIP-seq peaks
+  `--chipseq_fasta` FASTA file containing sequences of ChIP-seq peaks
   
-  `rnaseq_table` Table containing log2FC and p-adj values from RNA-seq processing experiment
+  `--rnaseq_table` Table containing log2FC and p-adj values from RNA-seq processing experiment
   
-  `motif_recognition` A boolean function determines whether the motif will be recognized (0 - if not, 1 - if yes)
+  `--motif_recognition` A boolean function determines whether the motif will be recognized (0 - if not, 1 - if yes)
   
-  `file_output` Name of output file
+  `--file_output` Name of output file
   
 ####  optional arguments:
-  
-  `file_PWM` File containing position weight matrix
-  
-  `threshold` Threshold value for position weight matrix
 
-  `chip_seq_fasta` FASTA file containing sequences of ChIP-seq peaks  
+  `--chipseq_peaks` BED file containing ChIP-seq peaks
+  
+  `--file_PWM` File containing position weight matrix
+  
+  `--threshold` Threshold value for position weight matrix
  
    `-h, --help` show this help message and exit  
    
 The program can work in two modes: with and without motif recognition. If the motif recognition function is active, user must provide the positional weight matrix, threshold value, and ChIP-seq peak sequences in FASTA format.
  
 #### Example run without motif recognition: 
- `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 0 target_genes.txt`
+ `python3 gene_target.py --chipseq_fasta=ein3_chipseq_4h.fas --rnaseq_table=ethylene_rnaseq_full.txt --motif_recognition=0 --file_output=target_genes.txt`
  
 #### Example run with motif recognition: 
- `python3 gene_target.py ein3_chipseq_4h.bed ethylene_rnaseq_full.txt 1 target_genes.txt pwm_1.txt 0.91 ein3_chipseq_4h.fasta`
+ `python3 gene_target.py --chipseq_fasta=ein3_chipseq_4h.fasta --chipseq_peaks=ein3_chipseq_4h.bed --rnaseq_table=ethylene_rnaseq_full.txt --motif_recognition=1 --file_output=target_genes.txt --file_PWM=pwm_1.txt --threshold=0.91`
  
  File formats
 --------
